@@ -39,15 +39,20 @@ h1 {
 }
 
 .header-ul li {
-    display: inline;
+    display: inline-block;
     font-weight: bold;
     font-size: 12px;
     text-transform: uppercase;
-    margin-left: 25px;
     color: white;
 }
 
-.header-ul li:hover {
+.markers {
+    color: #494e62;
+    margin: 11px;
+}
+
+
+.header-li-text:hover {
     text-decoration: underline;
     cursor: pointer;
 }
