@@ -20,11 +20,13 @@ header {
 }
 
 h1 {
-  margin: 0;
+  margin: 0 0 0 1px;
+  font-weight: 600;
 
   font-size: 25px;
   color: white;
   text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 
 .mark {
@@ -37,6 +39,7 @@ h1 {
 
 .header-ul {
   margin: 0;
+  padding: 0;
 }
 
 .header-ul li {
@@ -46,10 +49,12 @@ h1 {
   font-size: 12px;
   color: white;
   text-transform: uppercase;
+
 }
 
 .markers {
-  margin: 11px;
+  margin-right: 8px;
+  margin-left: 13px;
 
   color: #494e62;
 }
@@ -92,21 +97,29 @@ img {
 .slide {
   flex-grow: 1;
 }
+
 .phone-vertical {
   margin-left: 54px;
 }
+
 .phone-horizontal {
+  position: relative;
+  top: -1px;
   margin-left: 73px;
 }
+
 .arrow-left {
   margin-left: 4px;
 }
+
 .arrow-right {
   margin-right: 2px;
 }
+
 .arrow {
   transition: all 0.3s ease-out;
 }
+
 .arrow:hover {
   transform: scale(1.5);
   cursor: pointer;
@@ -130,15 +143,21 @@ h2 {
   color: #666d89;
   text-transform: capitalize;
 }
+
 .footer-description {
   margin: 18px 0 0 0;
+}
 
+.description {
+  letter-spacing: 0;
+  word-spacing: -0.075em;
   font-weight: 300;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.7;
   text-align: justify;
   color: #767e9e;
 }
+
 h3 {
   margin: 0;
 
@@ -147,31 +166,36 @@ h3 {
   color: #666d89;
   text-transform: capitalize;
 }
+
 .footer-blocks-article {
   margin-left: 20px;
 }
+
 .footer-blocks-text {
   margin-top: 9px;
+}
 
+.small-text {
   font-size: 12px;
   line-height: 1.8;
   text-align: justify;
   color: #767e9e;
-  word-wrap: break-word;
 }
 
 .footer-layout {
   display: grid;
-  margin-top: 44px;
+  margin-top: 42px;
   margin-left: 1px;
 
-  gap: 15px 18px;
+  gap: 17px 18px;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 .footer-blocks {
   display: flex;
   align-items: flex-start;
 }
+
 .footer-layout img {
   margin-top: 4px;
 }
