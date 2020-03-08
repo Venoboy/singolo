@@ -1,0 +1,1 @@
+[Link to the project github.pages](https://venoboy.github.io/singolo/)
