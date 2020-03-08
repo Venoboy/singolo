@@ -171,6 +171,7 @@ h3 {
 
 .services-blocks-text {
   margin-top: 9px;
+  overflow: hidden;
 }
 
 .small-text {
@@ -188,11 +189,14 @@ h3 {
 
   gap: 17px 20px;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 106px 106px;
+  overflow: hidden;
 }
 
 .services-blocks {
   display: flex;
   align-items: flex-start;
+  overflow: hidden;
 }
 
 .services-layout img {
