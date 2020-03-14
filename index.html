@@ -8,16 +8,16 @@
 </head>
 <body>
 <div class="wrapper">
-  <header>
+  <header id="home">
     <div class="inner-wrapper top-layout">
       <h1>Singolo<span class="mark">*</span></h1>
       <nav class="header-nav">
-        <ul class="header-ul">
-          <li><span class="header-li-text mark">Home</span><span class="markers">·</span></li>
-          <li><span class="header-li-text">Services</span><span class="markers">·</span></li>
-          <li><span class="header-li-text">Portfolio</span><span class="markers">·</span></li>
-          <li><span class="header-li-text">About</span><span class="markers">·</span></li>
-          <li><span class="header-li-text">Contact</span></li>
+        <ul id="menu" class="header-ul">
+          <li><a href="#home" class="header-li-text mark">Home</a><span class="markers">·</span></li>
+          <li><a href="#services" class="header-li-text">Services</a><span class="markers">·</span></li>
+          <li><a href="#portfolio" class="header-li-text">Portfolio</a><span class="markers">·</span></li>
+          <li><a href="#about" class="header-li-text">About</a><span class="markers">·</span></li>
+          <li><a href="#contact" class="header-li-text">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -25,15 +25,23 @@
   <section class="slider">
     <div class="inner-wrapper slider-layout">
       <h2 class="h2-invisible">Slider</h2>
-      <img src="assets/Singolo1/arrow-left.png" alt="" class="arrow arrow-left">
-      <div class="slider-images">
-        <img class="phone-vertical" src="assets/Singolo1/phone-vertical.png" alt="phone-vertical">
-        <img class="phone-horizontal" src="assets/Singolo1/phone-horizontal.png" alt="phone-horizontal">
+      <img id="arrow-left" src="assets/Singolo1/arrow-left.png" alt="" class="arrow arrow-left">
+      <div id="slider-images" class="slider-images">
+        <div id="first-pic" class="slider-pic-container">
+          <img id="phone-vertical" class="phone-vertical" src="assets/Singolo1/phone-vertical.png" alt="phone-vertical">
+          <img id="screen-vertical" src="assets/Js/Screen-vert.png" alt="">
+          <img id="phone-horizontal" class="phone-horizontal" src="assets/Singolo1/phone-horizontal.png"
+               alt="phone-horizontal">
+          <img id="screen-horizontal" src="assets/Js/Screen-hor.png" alt="">
+        </div>
+        <div id="second-pic" class="slider-pic-container">
+          <img src="assets/Js/Group%202.png" alt="">
+        </div>
       </div>
-      <img src="assets/Singolo1/arrow-right.png" alt="" class="arrow arrow-right">
+      <img id="arrow-right" src="assets/Singolo1/arrow-right.png" alt="" class="arrow arrow-right">
     </div>
   </section>
-  <section class="services">
+  <section id="services" class="services">
     <div class="inner-wrapper services-wrapper">
       <h2 class="services-h2">Our services</h2>
       <p class="services-description description">
@@ -103,7 +111,7 @@
       </section>
     </div>
   </section>
-  <section class="portfolio">
+  <section id="portfolio" class="portfolio">
     <div class="inner-wrapper">
       <h2 class="h2-invisible">Portfolio</h2>
       <article class="portfolio-about">
@@ -114,27 +122,27 @@
         <p class="portfolio-labels">
           <span class="checked">All</span><span>Web Design</span><span>Graphic Design</span><span>Artwork</span>
         </p>
-        <div class="portfolio-gallery">
-          <img src="assets/Singolo2/gallery/1.png" alt="">
-          <img src="assets/Singolo2/gallery/2.png" alt="">
-          <img src="assets/Singolo2/gallery/3.png" alt="">
-          <img src="assets/Singolo2/gallery/4.png" alt="">
-          <img src="assets/Singolo2/gallery/5.png" alt="">
-          <img src="assets/Singolo2/gallery/6.png" alt="">
-          <img src="assets/Singolo2/gallery/7.png" alt="">
-          <img src="assets/Singolo2/gallery/8.png" alt="">
-          <img src="assets/Singolo2/gallery/9.png" alt="">
-          <img src="assets/Singolo2/gallery/10.png" alt="">
-          <img src="assets/Singolo2/gallery/11.png" alt="">
-          <img src="assets/Singolo2/gallery/12.png" alt="">
-          <img src="assets/Singolo2/gallery/10.png" alt="">
-          <img src="assets/Singolo2/gallery/11.png" alt="">
-          <img src="assets/Singolo2/gallery/12.png" alt="">
+        <div id="gallery-container">
+          <img id="gallery-border" src="assets/Js/gallery-border.png" alt="">
+          <div class="portfolio-gallery">
+            <img src="assets/Singolo2/gallery/1.png" alt="">
+            <img src="assets/Singolo2/gallery/2.png" alt="">
+            <img src="assets/Singolo2/gallery/3.png" alt="">
+            <img src="assets/Singolo2/gallery/4.png" alt="">
+            <img src="assets/Singolo2/gallery/5.png" alt="">
+            <img src="assets/Singolo2/gallery/6.png" alt="">
+            <img src="assets/Singolo2/gallery/7.png" alt="">
+            <img src="assets/Singolo2/gallery/8.png" alt="">
+            <img src="assets/Singolo2/gallery/9.png" alt="">
+            <img src="assets/Singolo2/gallery/10.png" alt="">
+            <img src="assets/Singolo2/gallery/11.png" alt="">
+            <img src="assets/Singolo2/gallery/12.png" alt="">
+          </div>
         </div>
       </article>
     </div>
   </section>
-  <section class="about-us">
+  <section id="about" class="about-us">
     <div class="inner-wrapper">
       <h2 class="h2-invisible">About Us</h2>
       <article class="about-us-about">
@@ -190,7 +198,7 @@
       </article>
     </div>
   </section>
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="inner-wrapper">
       <h2 class="h2-invisible">Contact</h2>
       <article class="contact-about">
@@ -210,10 +218,10 @@
             <input class="input-text" type="email" placeholder="Email (Required)" required>
           </label>
           <label>
-            <input class="input-text" type="text" placeholder="Subject">
+            <input id="subject" class="input-text" type="text" placeholder="Subject">
           </label>
           <label>
-            <textarea class="input-text" placeholder="Describe your project in detail..."></textarea>
+            <textarea id="description-project" class="input-text" placeholder="Describe your project in detail..."></textarea>
           </label>
           <input class="contact-send" type="submit" value="Submit">
         </form>
@@ -260,5 +268,6 @@
     </div>
   </footer>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
