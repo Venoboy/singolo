@@ -136,6 +136,24 @@ h1 {
   align-items: center;
 }
 
+.first-pic-click {
+  width: 216px;
+  height: 458px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  border-radius: 25px;
+}
+
+.second-pic-click {
+  width: 458px;
+  height: 216px;
+  position: absolute;
+  top: 135px;
+  left: 313px;
+  border-radius: 25px;
+}
+
 img {
   margin: 0;
   padding: 0;
@@ -497,6 +515,7 @@ input.contact-send {
   align-self: flex-end;
   width: 100px;
   margin: 10px 0 0 0;
+  cursor: pointer;
 }
 
 .contact-small-text {
