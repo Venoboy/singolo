@@ -8,11 +8,34 @@ let phoneVertical = document.querySelector(".first-pic-click"),
 //-------------------Переменные-----------------------------
 
 menu.addEventListener('click', (event) => {
+  document.removeEventListener('scroll', scrollHandler);
   menu.querySelectorAll('li').forEach(node => {
     node.firstChild.classList.remove('mark')
   });
   event.target.classList.add('mark');
+  setTimeout(() => {
+    document.addEventListener("scroll", scrollHandler);
+  }, 1000)
 });
+
+const scrollHandler = () => {
+  const current = window.scrollY + 90,
+  blocks = document.querySelectorAll('.wrapper section'),
+  links = menu.querySelectorAll('a');
+  blocks.forEach((block, index) => {
+    if (block.offsetTop < current && (block.offsetTop + block.clientHeight) > current) {
+      if (current + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
+        index += 1;
+      }
+      links.forEach(link => {
+        link.classList.remove('mark')
+      });
+      links[index].classList.add('mark');
+    }
+  } );
+};
+
+document.addEventListener("scroll", scrollHandler);
 
 //-------------Конец переключения меню---------------------
 
@@ -101,18 +124,25 @@ phoneHorizontal.addEventListener("click", clickHorizontalHandler);
 
 //----------------------Конец переключения экранов---------------------------
 
+
+const portfolioGallery = document.querySelector('.portfolio-gallery');
+const images = [...portfolioGallery.querySelectorAll('img')];
 const labels = document.querySelector('.portfolio-labels'),
   labelsElements = [...labels.querySelectorAll('span')];
-const portfolioGallery = document.querySelector('.portfolio-gallery');
+
 
 labels.addEventListener('click', (event) => {
   labels.querySelectorAll('span').forEach(node => {
     node.classList.remove('checked')
   });
-  const images = portfolioGallery.querySelectorAll('img');
-  images.forEach((img, index) => {
-    img.style.order = ((index + labelsElements.indexOf(event.target)) % images.length).toString()
-  });
+
+  let labelNumber = labelsElements.indexOf(event.target),
+  imagesNew = images.concat();
+  for (let i = 0; i < labelNumber; i++) {
+    imagesNew.push(imagesNew.shift())
+  }
+  portfolioGallery.innerHTML = '';
+  portfolioGallery.append(...imagesNew);
   event.target.classList.add('checked');
 });
 
@@ -151,7 +181,8 @@ contactForm.addEventListener("submit", (event) => {
   if (descriptionProject.value === "") descriptionProjectText = "Без описания";
   else descriptionProjectText = "Описание: " + descriptionProject.value;
 
-  alert(`Письмо отправлено \n${subjectText} \n${descriptionProjectText}`)
+  alert(`Письмо отправлено \n${subjectText} \n${descriptionProjectText}`);
+  contactForm.reset()
 });
 
 
