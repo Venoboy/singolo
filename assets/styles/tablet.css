@@ -1,0 +1,78 @@
+/*768px*/
+@media (max-width: 1019px) {
+  .wrapper {
+    width: 100vw;
+  }
+
+  #phone-vertical {
+    width: 23.6vw;
+  }
+
+  #phone-horizontal {
+    width: 47.4vw;
+    margin-left: 7.1vw;
+  }
+
+  .inner-wrapper.slider-layout {
+    margin: 0 3.83vw;
+  }
+
+  .slider-images,
+  .slider-pic-container {
+    width: 78.06vw;
+  }
+
+  .first-pic-click,
+  .second-pic-click {
+    display: none;
+  }
+
+  .services-layout {
+    display: grid;
+    margin-top: 43px;
+    margin-left: 1px;
+
+    gap: 5.21vw 6.9vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 106px 106px;
+    overflow: hidden;
+  }
+
+  .portfolio-gallery {
+    grid-template-columns: repeat(3, calc((100% - 40px) / 3));
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .portfolio-gallery img {
+    width: 100%;
+  }
+
+  .three-column-layout {
+    grid-template-columns: repeat(3, calc((100% - 20px) / 3));
+  }
+
+  .about-us-people {
+    width: 100%;
+  }
+
+  .people-photo {
+    width: 100%;
+  }
+
+  .contact-form input, textarea {
+    width: 57.55vw;
+  }
+
+  .contact-form input {
+    margin-bottom: 1.56vw;
+  }
+
+  input.contact-send {
+    align-self: flex-start;
+    width: 100px;
+  }
+
+  .contact-data {
+    margin-top: 1.56vw;
+  }
+}

@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Singolo</title>
   <link href="assets/Fonts/fonts.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="modal"></div>
 <div class="wrapper">
   <header>
+    <img id="burger-menu" src="assets/Singolo1/Burger-menu-icon.png" alt="menu-icon">
     <div class="inner-wrapper top-layout">
       <h1>Singolo<span class="mark">*</span></h1>
       <nav class="header-nav">
@@ -28,7 +31,8 @@
       <img id="arrow-left" src="assets/Singolo1/arrow-left.png" alt="" class="arrow arrow-left">
       <div id="slider-images" class="slider-images">
         <div id="first-pic" class="slider-pic-container">
-          <img id="phone-vertical" class="phone-vertical" src="assets/Singolo1/phone-vertical.png" alt="phone-vertical">
+          <img id="phone-vertical" class="phone-vertical" src="assets/Singolo1/phone-vertical.png"
+               alt="phone-vertical">
           <img id="screen-vertical" src="assets/Js/Screen-vert.png" alt="">
           <div class="first-pic-click"></div>
           <img id="phone-horizontal" class="phone-horizontal" src="assets/Singolo1/phone-horizontal.png"
@@ -156,7 +160,7 @@
         </p>
         <div class="three-column-layout">
           <div class="about-us-people">
-            <img src="assets/Singolo2/photo1.png" alt="">
+            <img class="people-photo" src="assets/Singolo2/photo1.png" alt="">
             <h3 class="about-us-name">Adam Jensen</h3>
             <p class="about-us-bio small-text">
               Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
@@ -169,7 +173,7 @@
             </div>
           </div>
           <div class="about-us-people person2">
-            <img src="assets/Singolo2/photo2.png" alt="">
+            <img class="people-photo" src="assets/Singolo2/photo2.png" alt="">
             <h3 class="about-us-name">Desmond Miles</h3>
             <p class="about-us-bio small-text">
               Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices
@@ -183,7 +187,7 @@
             </div>
           </div>
           <div class="about-us-people">
-            <img src="assets/Singolo2/photo3.png" alt="">
+            <img class="people-photo" src="assets/Singolo2/photo3.png" alt="">
             <h3 class="about-us-name">Scolara Visari</h3>
             <p class="about-us-bio small-text">
               Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque
@@ -226,7 +230,7 @@
             <textarea id="description-project" class="input-text"
                       placeholder="Describe your project in detail..."></textarea>
           </label>
-          <input class="contact-send" type="submit" value="Submit">
+          <input class="contact-send" type="submit" value="SEND">
         </form>
         <aside>
           <article class="contact-info">
@@ -271,6 +275,7 @@
     </div>
   </footer>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>

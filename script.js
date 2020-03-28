@@ -185,6 +185,35 @@ contactForm.addEventListener("submit", (event) => {
   contactForm.reset()
 });
 
+//----------------------Конец блока контактов---------------------------
 
+const burgerMenu = document.getElementById('burger-menu'),
+slideMenu = document.querySelector('.header-nav'),
+modal = document.getElementById('modal'),
+h1 = document.querySelector('h1'),
+topLayout = document.querySelector('.top-layout');
+
+
+burgerMenu.addEventListener('click', (ev) => {
+  //console.log(window.getComputedStyle(slideMenu).transform.split(',')[4]);
+  if (window.getComputedStyle(slideMenu).transform.split(',')[4] < 0) {
+    modal.style.display = 'block';
+    topLayout.style.marginLeft = '18.93vw';
+    slideMenu.classList.remove('translate-100');
+    slideMenu.classList.add('translate-0');
+    burgerMenu.style.transform = 'rotate(90deg)';
+    topLayout.style.justifyContent = 'left';
+    h1.style.zIndex = '150';
+
+  } else {
+    topLayout.style.marginLeft = '0';
+    modal.style.display = 'none';
+    slideMenu.classList.remove('translate-0');
+    slideMenu.classList.add('translate-100');
+    burgerMenu.style.transform = 'rotate(0deg)';
+    topLayout.style.justifyContent = '';
+    h1.style.zIndex = '0';
+  }
+});
 
 
