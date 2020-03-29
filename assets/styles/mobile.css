@@ -125,6 +125,9 @@
     grid-gap: 34px;
     justify-content: center;
   }
+  .gallery-last {
+    display: none;
+  }
 
   #contact {
     padding: 59px 0 42px 0;
@@ -143,5 +146,23 @@
     margin: 32px 0 0 0;
   }
 
+  .footer-copyright {
+    display: none;
+  }
 
+  footer {
+    justify-content: center;
+  }
+
+
+}
+
+@media screen and (max-width: 375px) {
+  .portfolio-labels {
+
+  }
+  .portfolio-labels span {
+    display: inline-block;
+    margin: 0 11px 5px 0;
+  }
 }
