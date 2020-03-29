@@ -123,6 +123,7 @@
   .three-column-layout {
     grid-template: 'a' 'a' 'a';
     grid-gap: 34px;
+    justify-content: center;
   }
 
   #contact {

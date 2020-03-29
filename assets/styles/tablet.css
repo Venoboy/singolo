@@ -1,7 +1,7 @@
 /*768px*/
 @media (max-width: 1019px) {
   .wrapper {
-    width: 100vw;
+    width: 100%;
   }
 
   #phone-vertical {
